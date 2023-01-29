@@ -1,3 +1,44 @@
 <resources>
+
+    <!-- Common begin -->
     <string name="app_name">LearningHelper</string>
+    <string name="no_skype_found">No Skype found!</string>
+    <string name="skype_package">com.skype.raider</string>
+    <!-- Common end -->
+
+    <!-- Navigation begin -->
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_classes">Classes</string>
+    <string name="bottom_navigation_list">List</string>
+    <string name="bottom_navigation_favorites">Favorites</string>
+    <!-- Navigation end -->
+
+    <!-- MainFragment begin -->
+    <string name="fragment_main_exams_question">Are you ready for exams?</string>
+    <string name="fragment_main_example_digit">9</string>
+    <string name="fragment_main_exams_countdown_separator_text">:</string>
+    <string name="fragment_main_exams_days">Days</string>
+    <string name="fragment_main_exams_hours">Hours</string>
+    <string name="fragment_main_exams_minutes">Minutes</string>
+    <string name="fragment_main_classes_line_title">Classes</string>
+    <string name="fragment_main_classes_line_value">%1$s classes today</string>
+    <string name="fragment_main_homework_header">Homework</string>
+    <!-- MainFragment end -->
+
+    <!-- Homework item begin -->
+    <string name="homework_item_deadline">%1$s days left</string>
+    <!-- Homework item end -->
+
+    <!-- ClassesList item begin -->
+    <string name="classes_list_item_teacher">Teacher: %1$s</string>
+    <!-- ClassesList item end -->
+
+    <!-- ListFragment begin -->
+    <string name="fragment_list_message">Under construction</string>
+    <!-- ListFragment end -->
+
+    <!-- FavoritesFragment begin -->
+    <string name="fragment_favorites_message">Under construction</string>
+    <!-- FavoritesFragment end -->
+
 </resources>

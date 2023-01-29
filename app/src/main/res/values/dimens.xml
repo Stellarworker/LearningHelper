@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MainFragment begin -->
+    <dimen name="fragment_main_exams_margin">5dp</dimen>
+    <dimen name="fragment_main_exams_padding">5dp</dimen>
+    <dimen name="fragment_main_exams_corner_radius">30dp</dimen>
+    <dimen name="fragment_main_exams_elevation">5dp</dimen>
+    <dimen name="fragment_main_exams_question_text_size">20sp</dimen>
+    <dimen name="fragment_main_exams_question_margin_vertical">10dp</dimen>
+    <dimen name="fragment_main_exams_countdown_margin">5dp</dimen>
+    <dimen name="fragment_main_exams_countdown_corner_radius">5dp</dimen>
+    <dimen name="fragment_main_exams_countdown_elevation">5dp</dimen>
+    <dimen name="fragment_main_exams_countdown_text_size">25sp</dimen>
+    <dimen name="fragment_main_exams_countdown_margin_vertical">10dp</dimen>
+    <dimen name="fragment_main_exams_countdown_digits_margin">5dp</dimen>
+    <dimen name="fragment_main_exams_description_text_size">11sp</dimen>
+    <dimen name="fragment_main_classes_line_margin_horizontal">5dp</dimen>
+    <dimen name="fragment_main_classes_line_title_margin">5dp</dimen>
+    <dimen name="fragment_main_classes_line_title_text_size">15sp</dimen>
+    <dimen name="fragment_main_classes_line_value_margin">5dp</dimen>
+    <dimen name="fragment_main_classes_line_value_text_size">15sp</dimen>
+    <dimen name="fragment_main_homework_header_margin">5dp</dimen>
+    <dimen name="fragment_main_homework_header_text_size">15sp</dimen>
+    <!-- MainFragment end -->
+
+    <!-- ListFragment begin -->
+    <dimen name="fragment_list_message_text_size">20sp</dimen>
+    <!-- ListFragment end -->
+
+    <!-- FavoritesFragment begin -->
+    <dimen name="fragment_favorites_message_text_size">20sp</dimen>
+    <!-- FavoritesFragment end -->
+
+    <!-- ClassesItem begin -->
+    <dimen name="classes_item_root_layout_margin">5dp</dimen>
+    <dimen name="classes_item_root_corner_radius">30dp</dimen>
+    <dimen name="classes_item_root_elevation">5dp</dimen>
+    <dimen name="classes_item_title_margin_start">50dp</dimen>
+    <dimen name="classes_item_title_margin_top">10dp</dimen>
+    <dimen name="classes_item_title_text_size">22sp</dimen>
+    <dimen name="classes_item_time_margin_start">50dp</dimen>
+    <dimen name="classes_item_time_margin_bottom">10dp</dimen>
+    <dimen name="classes_item_time_text_size">15sp</dimen>
+    <dimen name="classes_item_skype_width">30dp</dimen>
+    <!-- ClassesItem end -->
+
+    <!-- HomeworkItem begin -->
+    <dimen name="homework_item_root_layout_width">300dp</dimen>
+    <dimen name="homework_item_root_layout_margin">5dp</dimen>
+    <dimen name="homework_item_root_corner_radius">30dp</dimen>
+    <dimen name="homework_item_root_elevation">5dp</dimen>
+    <dimen name="homework_item_title_margin_horizontal">50dp</dimen>
+    <dimen name="homework_item_title_margin_top">10dp</dimen>
+    <dimen name="homework_item_title_text_size">22sp</dimen>
+    <dimen name="homework_item_deadline_margin_horizontal">50dp</dimen>
+    <dimen name="homework_item_deadline_text_size">15sp</dimen>
+    <dimen name="homework_item_description_margin_horizontal">50dp</dimen>
+    <dimen name="homework_item_description_margin_bottom">10dp</dimen>
+    <dimen name="homework_item_description_text_size">15sp</dimen>
+    <!-- HomeworkItem end -->
+
+    <!-- ClassesListItem begin -->
+    <dimen name="classes_list_item_root_layout_margin">5dp</dimen>
+    <dimen name="classes_list_item_root_corner_radius">30dp</dimen>
+    <dimen name="classes_list_item_root_elevation">5dp</dimen>
+    <dimen name="classes_list_item_title_margin_start">50dp</dimen>
+    <dimen name="classes_list_item_title_margin_top">10dp</dimen>
+    <dimen name="classes_list_item_title_text_size">22sp</dimen>
+    <dimen name="classes_list_item_time_margin_start">50dp</dimen>
+    <dimen name="classes_list_item_time_margin_bottom">10dp</dimen>
+    <dimen name="classes_list_item_time_text_size">15sp</dimen>
+    <dimen name="classes_list_item_teacher_margin_start">50dp</dimen>
+    <dimen name="classes_list_item_teacher_margin_bottom">10dp</dimen>
+    <dimen name="classes_list_item_teacher_text_size">15sp</dimen>
+    <dimen name="classes_list_item_description_margin_start">50dp</dimen>
+    <dimen name="classes_list_item_description_margin_bottom">10dp</dimen>
+    <dimen name="classes_list_item_description_text_size">15sp</dimen>
+    <dimen name="classes_list_item_skype_width">30dp</dimen>
+    <!-- ClassesListItem end -->
+
+</resources>

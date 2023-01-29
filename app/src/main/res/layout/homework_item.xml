@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homework_item_root"
+    android:layout_width="@dimen/homework_item_root_layout_width"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/homework_item_root_layout_margin"
+    app:cardCornerRadius="@dimen/homework_item_root_corner_radius"
+    app:cardElevation="@dimen/homework_item_root_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homework_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homework_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/homework_item_title_margin_horizontal"
+            android:layout_marginTop="@dimen/homework_item_title_margin_top"
+            android:textSize="@dimen/homework_item_title_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/homework_item_deadline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homework_item_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/homework_item_deadline_margin_horizontal"
+            android:textSize="@dimen/homework_item_deadline_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/homework_item_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homework_item_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homework_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/homework_item_description_margin_horizontal"
+            android:layout_marginBottom="@dimen/homework_item_description_margin_bottom"
+            android:textSize="@dimen/homework_item_description_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homework_item_deadline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

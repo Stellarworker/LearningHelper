@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_main_exams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_main_exams_margin"
+        android:padding="@dimen/fragment_main_exams_padding"
+        app:cardCornerRadius="@dimen/fragment_main_exams_corner_radius"
+        app:cardElevation="@dimen/fragment_main_exams_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_main_exams_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/fragment_main_exams_question_margin_vertical"
+                android:singleLine="true"
+                android:text="@string/fragment_main_exams_question"
+                android:textSize="@dimen/fragment_main_exams_question_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/fragment_main_exams_countdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/fragment_main_exams_countdown_margin_vertical"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_main_exams_question">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/fragment_main_exams_countdown_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fragment_main_exams_countdown_days_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                        app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                        app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fragment_main_exams_countdown_days_first_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                            android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fragment_main_exams_countdown_days_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                        app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                        app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fragment_main_exams_countdown_days_second_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                            android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/fragment_main_exams_countdown_separator_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                    android:text="@string/fragment_main_exams_countdown_separator_text"
+                    android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragment_main_exams_countdown_hours_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                    app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                    app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fragment_main_exams_countdown_hours_first_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                        android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragment_main_exams_countdown_hours_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                    app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                    app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fragment_main_exams_countdown_hours_second_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                        android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/fragment_main_exams_countdown_separator_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                    android:text="@string/fragment_main_exams_countdown_separator_text"
+                    android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragment_main_exams_countdown_minutes_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                    app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                    app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fragment_main_exams_countdown_minutes_first_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                        android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragment_main_exams_countdown_minutes_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fragment_main_exams_countdown_margin"
+                    app:cardCornerRadius="@dimen/fragment_main_exams_countdown_corner_radius"
+                    app:cardElevation="@dimen/fragment_main_exams_countdown_elevation">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fragment_main_exams_countdown_minutes_second_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                        android:textSize="@dimen/fragment_main_exams_countdown_text_size" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_main_exams_description_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                android:text="@string/fragment_main_exams_days"
+                android:textSize="@dimen/fragment_main_exams_description_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_main_exams_description_hours"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_main_exams_countdown" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_main_exams_description_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                android:text="@string/fragment_main_exams_hours"
+                android:textSize="@dimen/fragment_main_exams_description_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/fragment_main_exams_description_minutes"
+                app:layout_constraintStart_toEndOf="@+id/fragment_main_exams_description_days"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_main_exams_countdown" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_main_exams_description_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_main_exams_countdown_digits_margin"
+                android:text="@string/fragment_main_exams_minutes"
+                android:textSize="@dimen/fragment_main_exams_description_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fragment_main_exams_description_hours"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_main_exams_countdown" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_main_classes_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/fragment_main_classes_line_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_main_exams">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fragment_main_classes_line_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_main_classes_line_title_margin"
+            android:text="@string/fragment_main_classes_line_title"
+            android:textSize="@dimen/fragment_main_classes_line_title_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fragment_main_classes_line_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_main_classes_line_value_margin"
+            android:textSize="@dimen/fragment_main_classes_line_value_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_main_classes_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_main_homework_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_main_classes_line" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fragment_main_homework_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_main_homework_header_margin"
+        android:text="@string/fragment_main_homework_header"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/fragment_main_homework_header_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_main_homework_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_main_classes_list" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_main_homework_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_main_homework_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
